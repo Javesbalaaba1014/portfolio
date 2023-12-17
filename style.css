@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+.bold{
+    font-weight: bolder;
+}
+html{
+
+    scroll-behavior: smooth;
+}
+body{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #707070;
+}
+
+.menu-label , .menu-btn{
+    display: none;
+}
+nav{
+    background: rgb(255,171,171);
+    background: linear-gradient(0deg, rgba(138, 102, 102, 0) 0%, rgba(0,0,0,1) 50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+    top:0;
+    height: 10%;
+    z-index: 4;
+}
+.nav-selection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-selection a{
+    text-decoration: none;
+    margin: 40px;
+    font-family: Poppins;
+    font-size: 19px;
+    color: white;
+}
+.hero{
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+}
+.hero h1{
+    font-size: 120px;
+    margin-top: -200px;
+}
+.PORTFOLIO{
+    position: relative;
+    margin-top: -103px !important; 
+}
+.hero p{
+    position: relative;
+    width: 25%;
+    font-size: 20px;
+    left: -150px;
+}
+.hero img{
+    position: relative;
+    left: -170px;
+    margin-top: 200px;
+    z-index: -1;
+}
+.JBP{
+    margin-top: 150px;
+}
+.awards{
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+.hobbies{
+    text-align: center;
+    height: 90svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.my-games-hob{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 400px;
+}
+.my-games-hob img{
+    width: 150px;
+    height: 150px;
+}
+.img-back{
+    z-index: -4;
+    top: 40px;
+    position: relative;
+}
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 200px;
+    background-color: #D1C8C8;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+.message{
+    height: 150px !important;
+}
+.project{
+    margin-top: 100px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 500px;
+    height: auto;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.card img{
+    border-radius: 10px;
+    width: 100%;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+}
+.menu-btn:checked~  .menu-label {
+    display: none;
+}
+@media screen and (max-width : 425px) {
+    .nav-selection{
+        display: none;
+    }
+    .menu-label {
+        display: block;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 768px ) {
+
+    nav{
+        width: 100%;
+    }
+    .nav-selection{
+        width: 50%;
+        
+    }
+    .nav-selection a{
+        font-size: 10px;
+        margin: 15px;
+    }
+    .PORTFOLIO{
+        margin-top: 0 !important;
+        font-size: 12px;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero p{
+        width: 50%;
+        left: 0;
+        font-size: 15px;
+    }
+    .hero h1{
+        margin-top: 0 !important;
+        font-size: 50px;
+    }
+    .hero img{
+        left: 0;
+        margin-top: 0;
+    }
+    .school h1 , h3{
+        font-size: 15px;
+    }
+    .awards h1 , h3{
+        font-size: 15px;
+    }
+}
